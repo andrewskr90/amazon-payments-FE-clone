@@ -10,7 +10,7 @@ export default {
         blue: '#146eb4',
         darkBlue: '#232F3E',
         orange: '#FF9900',
-        gray: '#E3E6E6'
+        cream: '#E3E6E6'
       }
     },
   },
