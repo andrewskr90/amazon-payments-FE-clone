@@ -1,10 +1,10 @@
 import { ReactNode } from 'react';
+import { ShopConfig } from './types';
 
-interface ILayoutProps { children: ReactNode }
+interface ILayoutProps { children: ReactNode, shopConfig: ShopConfig }
 
 const Layout = (props: ILayoutProps) => {
-    const { children } = props
-    const shopConfig = { name: 'KitchenSmart' }
+    const { children, shopConfig } = props
     return (
         <div className="bg-cream h-screen w-full">
             <div className="bg-darkBlue text-white flex justify-between items-center py-2 px-2 md:px-8">
