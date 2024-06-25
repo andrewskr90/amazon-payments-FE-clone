@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Item, ShopConfig } from './types';
+import { Item, ShopConfig } from '../types';
 
 
 interface ILayoutProps { children: ReactNode, shopConfig: ShopConfig, items: Item[] }

@@ -1,5 +1,5 @@
-import Quantity from "./Quantity";
-import { Item, ShopConfig } from "./types";
+import Quantity from "./components/Quantity";
+import { Item, ShopConfig } from "../types";
 
 interface ICartProps { 
     items: Item[];

@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import { Item } from "./types";
+import { Item } from "../../types";
 
 interface IQuantityProps { item: Item; handleChangeQuantity: (productId: number, quantity: number) => void }
 interface ICircleProps { children: ReactNode }
