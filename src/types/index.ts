@@ -4,7 +4,8 @@ export type ShopConfig = {
   formattedName: string;
   currency: 'USD' | 'GBP';
 }
-export type CartProduct = {
+export type Item = {
+    id: number;
     name: string;
     storeId: number;
     retail: number;
