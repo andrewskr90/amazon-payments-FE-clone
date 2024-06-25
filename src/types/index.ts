@@ -2,8 +2,9 @@ export type ShopConfig = {
   id: number;
   name: string;
   formattedName: string;
-  currency: 'USD' | 'GBP';
+  currency: Currency;
 }
+export type Currency = 'USD' | 'GBP'
 export type Item = {
     id: number;
     name: string;
