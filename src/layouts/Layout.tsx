@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { Item, ShopConfig } from '../types';
+import ChevronLeft from '../components/ChevronLeft';
 
 
 interface ILayoutProps { children: ReactNode, shopConfig: ShopConfig, items: Item[] }
@@ -8,9 +9,7 @@ const Layout = (props: ILayoutProps) => {
     const { children, shopConfig, items } = props
     const BackButton = () => {
         return <button className='md:hidden'>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-            </svg>
+            <ChevronLeft />
         </button>
     }
     const CartButton = () => {
@@ -22,7 +21,7 @@ const Layout = (props: ILayoutProps) => {
         </button>
     }
     return (
-        <div className="bg-cream h-screen w-full">
+        <div className="bg-cream h-screen w-full justify-center">
             <div className="bg-darkBlue text-white flex justify-between items-center py-2 px-2 md:px-8">
                 <BackButton />
                 <h1 className='text-2xl md:text-3xl'>{shopConfig.formattedName}</h1>
@@ -33,7 +32,9 @@ const Layout = (props: ILayoutProps) => {
                 </nav>
                 <CartButton />
             </div>
-            {children}
+            <div className="max-w-[768px] mx-auto">
+                {children}
+            </div>
         </div>
     )
 }
