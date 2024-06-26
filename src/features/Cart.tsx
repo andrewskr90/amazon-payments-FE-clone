@@ -32,8 +32,9 @@ const Cart = (props: ICartProps) => {
                     <p>Amazon Pay</p>
                     <DoubleChevronRight />                       
                 </ActionButton>
-                <p className="text-justify text-[10px] font-extrabold uppercase">Use Your Amazon Account</p>
-                <span className="w-full"></span>
+                <p className="text-justify text-[10px] font-extrabold uppercase pb-3">Use Your Amazon Account</p>
+                <p className="pb-3">or</p>
+                <button className="uppercase">Pay With Credit Card</button>
             </div>
         </div>  
     )
